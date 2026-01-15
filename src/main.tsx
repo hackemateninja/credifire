@@ -7,8 +7,9 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
 		<Routes>
-			<Route element={<AuthLayout/>}>
-				<Route path='/login' element={<Login/>} />
+			<Route path='auth' element={<AuthLayout/>}>
+				<Route index  path='login' element={<Login/>} />
+				
 			</Route>
 		</Routes>
   </BrowserRouter>,
