@@ -2,6 +2,7 @@ import AuthLayout from '@/layouts/auth-layout'
 import DashboardLayout from '@/layouts/dashboard-layout'
 import '@/styles/globals.css'
 import Login from '@/views/auth/login.tsx'
+import DashboardIndex from '@/views/dashboard'
 import ClientsIndex from '@/views/dashboard/clients'
 import ClientsCreate from '@/views/dashboard/clients/create'
 import ClientsShow from '@/views/dashboard/clients/show'
@@ -14,7 +15,6 @@ import CustomersIndex from '@/views/dashboard/customers'
 import CustomersCreate from '@/views/dashboard/customers/create'
 import CustomersShow from '@/views/dashboard/customers/show'
 import CustomersUpdate from '@/views/dashboard/customers/update'
-import Home from '@/views/dashboard/home'
 import LoansIndex from '@/views/dashboard/loans'
 import LoansCreate from '@/views/dashboard/loans/create'
 import LoansShow from '@/views/dashboard/loans/show'
@@ -33,7 +33,7 @@ createRoot(document.getElementById('root')!).render(
 				<Route index  path='login' element={<Login/>} />
 			</Route>
 			<Route path='dashboard' element={<DashboardLayout/>}>
-				<Route index  path='' element={<Home/>} />
+				<Route index  path='' element={<DashboardIndex/>} />
 				<Route path='clients'>
 					<Route index path='' element={<ClientsIndex/>} />
 					<Route path='create' element={<ClientsCreate/>} />
