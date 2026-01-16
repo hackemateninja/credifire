@@ -11,10 +11,6 @@ import CollectorsIndex from '@/views/dashboard/collectors'
 import CollectorsCreate from '@/views/dashboard/collectors/create'
 import CollectorsShow from '@/views/dashboard/collectors/show'
 import CollectorsUpdate from '@/views/dashboard/collectors/update'
-import CustomersIndex from '@/views/dashboard/customers'
-import CustomersCreate from '@/views/dashboard/customers/create'
-import CustomersShow from '@/views/dashboard/customers/show'
-import CustomersUpdate from '@/views/dashboard/customers/update'
 import LoansIndex from '@/views/dashboard/loans'
 import LoansCreate from '@/views/dashboard/loans/create'
 import LoansShow from '@/views/dashboard/loans/show'
@@ -45,12 +41,6 @@ createRoot(document.getElementById('root')!).render(
 					<Route path='create' element={<CollectorsCreate/>} />
 					<Route path='show/:id' element={<CollectorsShow/>} />
 					<Route path='update/:id' element={<CollectorsUpdate/>} />
-				</Route>
-				<Route path='customers'>
-					<Route index path='' element={<CustomersIndex/>} />
-					<Route path='create' element={<CustomersCreate/>} />
-					<Route path='show/:id' element={<CustomersShow/>} />
-					<Route path='update/:id' element={<CustomersUpdate/>} />
 				</Route>
 				<Route path='loans'>
 					<Route index path='' element={<LoansIndex/>} />
